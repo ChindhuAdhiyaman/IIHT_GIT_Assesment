@@ -6,9 +6,7 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.NamedQuery;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
 
 /**
  * The persistent class for the book database table.
@@ -17,6 +15,7 @@ import javax.persistence.Temporal;
 @Entity
 @Table(name="book")
 public class BookDO {
+
 
 	@Id
 	@Column(name = "bookId")
@@ -77,5 +76,7 @@ public class BookDO {
 	public void setVolume(int volume) {
 		this.volume = volume;
 	}
+	
+	
 
 }
