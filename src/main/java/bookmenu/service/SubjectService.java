@@ -30,10 +30,10 @@ public class SubjectService {
 		return subjects;
 	}
 
-	@Transactional
-	public SubjectDO getsubject(Long id) {
-		return subjectRepository.findOne(id);
-	}
+//	@Transactional
+//	public SubjectDO getsubject(Long id) {
+//		return subjectRepository.findOne(id);
+//	}
 
 	@Transactional
 	public void addsubject(SubjectDO subject) {
@@ -46,10 +46,10 @@ public class SubjectService {
 
 	}
 
-	@Transactional
-	public void deletesubject(Long id) {
-		subjectRepository.delete(id);
-	}
+//	@Transactional
+//	public void deletesubject(Long id) {
+//		subjectRepository.delete(id);
+//	}
 
 	@Transactional
 	public List<SubjectDO> getsubjectBYDuration(int duration) {

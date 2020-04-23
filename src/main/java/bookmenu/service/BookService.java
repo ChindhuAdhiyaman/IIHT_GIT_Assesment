@@ -30,10 +30,10 @@ public class BookService {
 		return books;
 	}
 
-	@Transactional
-	public BookDO getbook(int id) {
-		return bookRepository.findOne(id);
-	}
+//	@Transactional
+//	public BookDO getbook(int id) {
+//		return bookRepository.findOne(id);
+//	}
 
 	@Transactional
 	public void addbook(BookDO book) {
@@ -46,10 +46,10 @@ public class BookService {
 
 	}
 
-	@Transactional
-	public void deletebook(int id) {
-		bookRepository.delete(id);
-	}
+//	@Transactional
+//	public void deletebook(int id) {
+//		bookRepository.delete(id);
+//	}
 
 	@Transactional
 	public List<BookDO> searchBookByTitle(String title) {

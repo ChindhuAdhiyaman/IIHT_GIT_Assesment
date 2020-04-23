@@ -56,42 +56,42 @@ public class MenuDemo {
 					System.out.println("The Book details are successfully added :) ");
 					break;
 
-				case 3:
-					Integer subDel = keyin.inInt("Enter the Subject ID to be Deleted: ");
-					boolean isDeleted = mySqldao.deleteSubject((long) subDel);
-					if (isDeleted)
-						System.out.println("The Subject details are Deleted ");
-					else {
-						System.out.println("Sorry, the details given doesnt exist in the file, please try again ");
-					}
-					break;
-				case 4:
-					Integer bookDel = keyin.inInt("Enter the Book ID to be Deleted: ");
-					boolean isBookDeleted = mySqldao.deleteBook(bookDel);
-					if (isBookDeleted)
-						System.out.println("The Book details are Deleted ");
-					else {
-						System.out.println("Sorry, the details given doesnt exist in the file, please try again ");
-					}
-					break;
-				case 5:
-					Integer bookName = keyin.inInt("Enter the Book Id to be searched: ");
-					boolean searchResult = mySqldao.searchBook(bookName);
-					if (searchResult) {
-						System.out.println("The Book " + bookName + " is available");
-					} else {
-						System.out.println("Sorry , The Book " + bookName + " is not available");
-					}
-					break;
-				case 6:
-					Integer subName = keyin.inInt("Enter the Subject Id to be searched: ");
-					searchResult = mySqldao.searchSubject((long) subName);
-					if (searchResult) {
-						System.out.println("The Subject " + subName + " is available");
-					} else {
-						System.out.println("Sorry , The Subject " + subName + " is not available");
-					}
-					break;
+//				case 3:
+//					Integer subDel = keyin.inInt("Enter the Subject ID to be Deleted: ");
+//					boolean isDeleted = mySqldao.deleteSubject((long) subDel);
+//					if (isDeleted)
+//						System.out.println("The Subject details are Deleted ");
+//					else {
+//						System.out.println("Sorry, the details given doesnt exist in the file, please try again ");
+//					}
+//					break;
+//				case 4:
+//					Integer bookDel = keyin.inInt("Enter the Book ID to be Deleted: ");
+//					boolean isBookDeleted = mySqldao.deleteBook(bookDel);
+//					if (isBookDeleted)
+//						System.out.println("The Book details are Deleted ");
+//					else {
+//						System.out.println("Sorry, the details given doesnt exist in the file, please try again ");
+//					}
+//					break;
+//				case 5:
+//					Integer bookName = keyin.inInt("Enter the Book Id to be searched: ");
+//					boolean searchResult = mySqldao.searchBook(bookName);
+//					if (searchResult) {
+//						System.out.println("The Book " + bookName + " is available");
+//					} else {
+//						System.out.println("Sorry , The Book " + bookName + " is not available");
+//					}
+//					break;
+//				case 6:
+//					Integer subName = keyin.inInt("Enter the Subject Id to be searched: ");
+//					searchResult = mySqldao.searchSubject((long) subName);
+//					if (searchResult) {
+//						System.out.println("The Subject " + subName + " is available");
+//					} else {
+//						System.out.println("Sorry , The Subject " + subName + " is not available");
+//					}
+//					break;
 				case 7:
 
 					String title = keyin.inString("Enter the Book Name to be searched: ");

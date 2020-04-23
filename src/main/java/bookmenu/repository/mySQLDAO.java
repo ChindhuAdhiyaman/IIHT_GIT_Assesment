@@ -39,13 +39,13 @@ public class mySQLDAO  {
 	 * @param stmt
 	 * @throws SQLException
 	 */
-	public boolean deleteBook(Integer bookId) throws SQLException {
-		boolean isDeleted = true;
-
-		bookService.deletebook(bookId);
-
-		return isDeleted;
-	}
+//	public boolean deleteBook(Integer bookId) throws SQLException {
+//		boolean isDeleted = true;
+//
+//		bookService.deletebook(bookId);
+//
+//		return isDeleted;
+//	}
 
 
 	/**
@@ -53,14 +53,14 @@ public class mySQLDAO  {
 	 * @return
 	 * @throws SQLException
 	 */
-	public boolean deleteSubject(Long subId) throws SQLException {
-
-		boolean isDeleted = true;
-		
-		subjectService.deletesubject(subId);
-		
-		return isDeleted;
-	}
+//	public boolean deleteSubject(Long subId) throws SQLException {
+//
+//		boolean isDeleted = true;
+//		
+//		subjectService.deletesubject(subId);
+//		
+//		return isDeleted;
+//	}
 
 
 
@@ -126,31 +126,31 @@ public class mySQLDAO  {
 	 * @return
 	 * @throws SQLException
 	 */
-	public boolean searchBook(Integer bookId) throws SQLException {
+//	public boolean searchBook(Integer bookId) throws SQLException {
+//
+//		Boolean isAvailable = false;
+//		BookDO book = new BookDO();		
+//		book=bookService.getbook(bookId);
+//		if(book!=null) {
+//			isAvailable = true;
+//		}
+//
+//		return isAvailable;
+//	}
 
-		Boolean isAvailable = false;
-		BookDO book = new BookDO();		
-		book=bookService.getbook(bookId);
-		if(book!=null) {
-			isAvailable = true;
-		}
 
-		return isAvailable;
-	}
-
-
-	public boolean searchSubject(Long subjectId) throws SQLException {
-
-		boolean isAvailable = false;
-		SubjectDO subject = new SubjectDO();
-
-		subject = subjectService.getsubject(subjectId);
-		if(subject!=null) {
-			isAvailable = true;
-		}
-
-		return isAvailable;
-	}
+//	public boolean searchSubject(Long subjectId) throws SQLException {
+//
+//		boolean isAvailable = false;
+//		SubjectDO subject = new SubjectDO();
+//
+//		subject = subjectService.getsubject(subjectId);
+//		if(subject!=null) {
+//			isAvailable = true;
+//		}
+//
+//		return isAvailable;
+//	}
 	
 	/**
 	 * @throws SQLException
