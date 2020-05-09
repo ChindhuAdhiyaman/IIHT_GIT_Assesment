@@ -194,14 +194,14 @@
 		<repository>
 			<id>springBoot-repo</id>
 			<name>BookMenuMVCSpringBoot</name>
-			<url>http://52.15.143.24:8081/content/repositories/springBoot-repo/</url>
+			<url>http://52.15.143.24:8081/repository/springBoot-repo/</url>
 		</repository>
 
 		<!-- Publish the versioned releases here -->
 		<snapshotRepository>
 			<id>springBoot-repo</id>
 			<name>BookMenuMVCSpringBoot</name>
-			<url>http://52.15.143.24:8081/content/repositories/springBoot-repo/snapshots</url>
+			<url>http://52.15.143.24:8081/repository/springBoot-repo/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -210,7 +210,7 @@
 		<repository>
 			<id>springBoot-repo</id>
 			<name>BookMenuMVCSpringBoot</name>
-			<url>http://52.15.143.24:8081/content/groups/public</url>
+			<url>http://52.15.143.24:8081/repository/springBoot-repo/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -226,7 +226,7 @@
 		<pluginRepository>
 			<id>springBoot-repo</id>
 			<name>BookMenuMVCSpringBoot</name>
-			<url>http://52.15.143.24:8081/content/groups/public</url>
+			<url>http://52.15.143.24:8081/repository/springBoot-repo/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
